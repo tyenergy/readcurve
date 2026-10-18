@@ -6,4 +6,5 @@ __pycache__/
 !examples/s11_data.csv
 !examples/s11_check.png
 sample_out_*.csv
-.claude/
+.claude/*
+!.claude/skills/

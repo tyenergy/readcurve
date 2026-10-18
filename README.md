@@ -62,6 +62,13 @@ python auto_detect.py fig.png --panel b -o out.csv                      # 只处
 - 刻度数字太小、带上标（如 10³）或被遮挡时 OCR 可能失败，此时请手动标定四个点；
 - 没有坐标轴线的图（纯网格或无框），绘图区会退化为整张图，建议用“框选区域”限定。
 
+## 作为 Claude Code skill 使用
+
+仓库自带 `.claude/skills/readcurve/SKILL.md`。在本仓库目录下启动 Claude Code 即可直接使用；
+要在其他项目（例如论文复现 skill）里用，把 `.claude/skills/readcurve/` 复制到那个项目的 `.claude/skills/` 下，
+或复制到 `~/.claude/skills/` 对所有项目生效，并保证本仓库已 clone 到本机（skill 会按说明定位或自动 clone）。
+skill 内写明了调用命令、日志解读、核对与重试规则、输出约定和不适用的情况。
+
 ## 手动 / 半自动步骤
 
 1. **打开图片**：滚轮缩放，按住右键（或中键）拖动平移，`F` 键适应窗口。
