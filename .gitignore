@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.readcurve.json
+*_data.csv
+*_check.png
+!examples/s11_data.csv
+!examples/s11_check.png
+sample_out_*.csv
+.claude/
